@@ -27,33 +27,33 @@ import Header from "./components/Header/header";
 function App() {
   const barData = [
     {
-      name: "Page A",
+      name: "SMS yuborilganlar",
       uv: 4000,
-      pv: 7500,
+      pv: 110,
       amt: 2400,
     },
     {
-      name: "Page B",
+      name: "Linkga kirganlar",
       uv: 3000,
-      pv: 4500,
+      pv: 75,
       amt: 2210,
     },
     {
-      name: "Page C",
+      name: "Mahsulot sahifasiga kirganlar",
       uv: 2000,
-      pv: 3000,
+      pv: 55,
       amt: 2290,
     },
     {
-      name: "Page D",
+      name: "Sotib olganlar",
       uv: 2780,
-      pv: 5508,
+      pv: 85,
       amt: 2000,
     },
     {
-      name: "Page E",
+      name: "Izoh qoldirganlar",
       uv: 1890,
-      pv: 4000,
+      pv: 75,
       amt: 2181,
     },
   ];
@@ -151,12 +151,12 @@ function App() {
                         left: 50,
                         bottom: 0,
                       }}
-                      barSize={30}
+                      barSize={25}
                     >
                       <XAxis
                         dataKey="name"
                         scale="point"
-                        padding={{ left: 90, right: 90 }}
+                        padding={{ left: 40, right: 50 }}
                       />
                       <YAxis />
                       <Tooltip />
@@ -392,7 +392,7 @@ function App() {
 
                 <div className="line-chart">
                   <div>
-                  <LineChart width={100} height={70} data={data}>
+                  <LineChart width={270} height={100} data={data}>
                     <Line type="monotone" dataKey="pv" stroke="#000" strokeWidth={2} />
                   </LineChart>
                   </div>
